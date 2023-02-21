@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	background: linear-gradient(90deg, rgba(232,255,199,1) 0%, rgba(191,224,135,1) 0%, rgba(168,255,238,1) 100%);
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header .logoImg{
+	font-size: 30px;
+	margin-right: 5px;
+}
+
+.header .brandName{
+	display: inline;
+	font-family: 'Inter', sans-serif;
+	font-weight: normal;
+}
+
+.header .searchBar{
+	font-family: 'Work Sans', sans-serif;
+	display: flex;
+	align-items: center;
+}
+
+.header .searchBar input{
+	border-radius: 10px 0 0 10px;
+	border: none;
+	padding: 10px;
+}
+
+.header .searchBar button{
+	padding: 10px 9px;
+	border-right: 2px;
+	border-top: 2px;
+	border-bottom: 2px;
+	border-color: dimgray;
+	border-radius: 0 10px 10px 0;
+	background-color: white;
+	cursor: pointer;
+}
+
+.header .searchBar button:hover{
+	background-color: black;
+	color: white;
+}
+
+.navbar nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 15px;
+	border-bottom: solid;
+	border-color: darkgrey;
+}
+
+.navbar .firstPart a, .navbar .secondPart a{
+	text-decoration: none;
+	color: black;
+	padding: 15px 10px;
+	font-size: 16px;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.navbar .firstPart a:hover, .navbar .secondPart a:hover{
+	background-color: black;
+	color: white;
+}
+
+.home{
+  	display: flex;
+  	justify-content: center;
+  	margin-top: 10px;
+  	position: relative;
+}
+
+.home .homeImg1{
+  	opacity: 100%;
+  	width: 1150px;
+  	height: 500px;
+  	object-fit: cover;
+  	animation-name: firstImg;
+  	animation-timing-function: ease-in-out;
+  	animation-iteration-count: infinite;
+  	animation-duration: 5s;
+  	animation-direction: alternate;
+  	position: relative;
+}
+
+.home .homeImg2{
+  	opacity: 0;
+  	width: 1150px;
+  	height: 500px;
+  	object-fit: cover;
+  	animation-name: secondImg;
+  	animation-timing-function: ease-in-out;
+  	animation-iteration-count: infinite;
+  	animation-duration: 5s;
+  	animation-direction: alternate;
+  	position: absolute;
+}
+
+@keyframes firstImg{
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+
+@keyframes secondImg{
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+.home .text1{
+  	position: absolute;
+  	display: flex;
+  	align-items: center;
+  	height: 50%;
+  	text-align: center;
+  	color: white;
+  	font-family: 'Work Sans', sans-serif;
+  	font-size: 50px;
+  	text-shadow: 5px 5px 5px black;
+}
+
+.home button{
+  	font-family: 'Work Sans', sans-serif;
+ 	position: absolute;
+	margin-top: 300px;
+  	background-color: transparent;
+  	color: black;
+  	padding: 10px;
+  	font-size: 18px;
+  	border-radius: 10px;
+  	border-color: black;
+  	border-width: 3px;
+  	cursor: pointer;
+}
+
+.home button:hover{
+  	background-color: black;
+  	color: white;
+}
+
+.loginForm{
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin: 0 auto;
+  	height: 100vh;
+}
+
+.loginBorder{
+  	border: 1px solid black;
+  	border-radius: 50px;
+  	background-color: whitesmoke;
+  	display: flex;
+  	justify-content: around;
+  	height: 72vh;
+}
+
+.loginForm .loginBorder .first img{
+	width: 500px;
+	height: 72vh;
+	object-fit: cover;
+	border-radius: 50px 0 0 50px;
+}
+
+.loginForm .loginBorder .second{
+	padding: 100px;
+}
+
+.loginForm .avatar{
+	text-align: center;
+}
+
+.loginForm .avatar img{
+	width: 100px;
+}
+
+.loginForm h1{
+  	font-family: 'Work Sans', sans-serif;
+  	font-size: 40px;
+  	text-align: center;
+}
+
+.loginForm .username label{
+  	font-family: 'Work Sans', sans-serif;
+  	font-size: 20px;
+}
+
+.loginForm .username input{
+	background-color: transparent;
+	border-color: black;
+	padding: 10px;
+	width: 220px;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+.loginForm .password{
+	margin-top: 10px;
+}
+
+.loginForm .password label{
+  	font-family: 'Work Sans', sans-serif;
+  	font-size: 20px;
+}
+
+.loginForm .password input{
+	background-color: transparent;
+	border-color: black;
+	padding: 10px;
+	width: 220px;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+.loginForm .btn{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.loginForm .btn button{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 15px;
+	padding: 10px 98px;
+	border-radius: 10px;
+	border-color: black;
+	background-color: transparent;
+	margin-top: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.loginForm .btn button:hover{
+	background-color: black;
+	color: white;
+}
+
+.loginForm .signUpPage{
+	text-align: center;
+	margin-top: 15px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 15px;
+}
+
+.signupForm{
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin: 0 auto;
+  	height: 100vh;
+}
+
+.singupBorder{
+  	border: 1px solid black;
+  	border-radius: 50px;
+  	background-color: whitesmoke;
+  	display: flex;
+  	justify-content: around;
+  	height: 72vh;
+}
+
+.signupForm .singupBorder .first img{
+	width: 500px;
+	height: 72vh;
+	object-fit: cover;
+	border-radius: 50px 0 0 50px;
+}
+
+.signupForm .singupBorder .second{
+	padding: 50px 100px;
+}
+
+.signupForm .avatar{
+	text-align: center;
+}
+
+.signupForm .avatar img{
+	width: 100px;
+}
+
+.signupForm h1{
+  	font-family: 'Work Sans', sans-serif;
+  	font-size: 40px;
+  	text-align: center;
+}
+
+.signupForm .username label{
+  	font-family: 'Work Sans', sans-serif;
+  	font-size: 20px;
+}
+
+.signupForm .username input{
+	background-color: transparent;
+	border-color: black;
+	padding: 10px;
+	width: 220px;
+	border-radius: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.signupForm .email label{
+  	font-family: 'Work Sans', sans-serif;
+  	font-size: 20px;
+}
+
+.signupForm .email input{
+	background-color: transparent;
+	border-color: black;
+	padding: 10px;
+	width: 220px;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+.signupForm .password{
+	margin-top: 10px;
+}
+
+.signupForm .password label{
+  	font-family: 'Work Sans', sans-serif;
+  	font-size: 20px;
+}
+
+.signupForm .password input{
+	background-color: transparent;
+	border-color: black;
+	padding: 10px;
+	width: 220px;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+.signupForm .btn{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.signupForm .btn button{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 15px;
+	padding: 10px 92px;
+	border-radius: 10px;
+	border-color: black;
+	background-color: transparent;
+	margin-top: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.signupForm .btn button:hover{
+	background-color: black;
+	color: white;
+}
+
+.signupForm .signUpPage{
+	text-align: center;
+	margin-top: 15px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 15px;
+}
+
+.homeRow{
+	display: flex;
+	justify-content: space-around;
+	width: 63%;
+	margin: 10px auto;
+}
+
+.homeRow .col{
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.homeRow .col img{
+	width: 350px;
+	object-fit: cover;
+	margin: 0;
+}
+
+.homeRow .col h4{
+	padding: 0 0 0 20px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 20px;
+}
+
+.line{
+	border-bottom: solid;
+	border-color: darkgrey;
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+
+.feature{
+	width: 63%;
+	margin: 0 auto;
+}
+
+.feature h4{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 30px;
+	margin-left: 26px;
+	margin-bottom: 5px;
+}
+
+.featureCard{
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.card {
+ 	width: 350px;
+ 	height: 730px;
+ 	margin: 0 auto;
+ 	background-color: #ddd;
+ 	border-radius: 3px;
+ 	z-index: 1;
+}
+
+.tools {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+
+.tools img{
+	width: 350px;
+	height: 530px;
+	object-fit: cover;
+}
+
+.card .cardContent{
+	text-align: center;
+}
+
+.card .cardContent h1{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 27px;
+}
+
+.card .cardContent p{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 17px;
+}
+
+.card .cardContent button{
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+	border-color: black;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.card .cardContent button:hover{
+	background-color: black;
+	color: white;
+}
+
+.footer{
+	margin-top: 50px;
+	padding: 20px;
+	background: linear-gradient(90deg, rgba(232,255,199,1) 0%, rgba(191,224,135,1) 0%, rgba(168,255,238,1) 100%);
+	text-align: center;
+}
+
+.footer .topTwo{
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer .footerNav ul{
+	display: flex;
+}
+
+.footer .footerNav ul li{
+	padding: 10px;
+	list-style-type: none;
+}
+
+.footer .footerNav ul li a{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	color: black;
+}
+
+.footer .footerNav ul li a:hover{
+	background-color: black;
+	color: white;
+	padding: 8px;
+	border-radius: 30px;
+}
+
+.footer .socialMedia .circleIcon i{
+	padding: 10px;
+	margin: 10px;
+	font-size: 16px;
+	border: 1px solid black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.footer .socialMedia .circleIcon i:hover{
+	background-color: black;
+	color: white;
+}
+
+.footer .copyRight h4{
+	margin: 7px 0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 15px;
+}
+
+.aboutUs{
+	margin-top: 10px;
+	padding: 20px 0;
+	background-color: rgb(255, 152, 152);
+	background-image: url('img/img12.jpg');
+}
+
+.aboutUs .bg .color{
+	background-color: #727272;
+	opacity: 50%;
+	padding: 100px;
+	margin: 0px 300px;
+	position: relative;
+}
+
+.aboutUs .bg h4{
+	position: absolute;
+	top: 16%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+	
+}
+
+.aboutUs .bg p{
+	position: absolute;
+	text-align: center;
+	top: 29%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 25px;
+	font-family: 'Work Sans', sans-serif;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
+
+.information{
+	text-align: center;
+	padding: 20px;
+	background-color: #ddd;
+}
+
+.information a{
+	text-decoration: none;
+	color: black;
+	text-decoration: none;
+	color: black;
+	padding: 15px 100px;
+	font-size: 18px;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.information a:hover{
+	
+}
+
+.openDays h4{
+	text-align: center;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 30px;
+}
+
+.openDays table{
+	border-collapse: collapse;
+	width: 50%;
+	margin: 0 auto;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.openDays table, .openDays td, .openDays th{
+	border: 1px solid black;
+}
+
+.openDays table th{
+	padding: 15px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.openDays table td{
+	text-align: center;
+	padding: 15px;
+	font-size: 25px;
+}
+
+.openDays table tr:hover{
+	background-color: rgb(223, 223, 223);
+}
+
+.location h4{
+	text-align: center;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 30px;
+}
+
+.location iframe{
+	width: 50%;
+	margin: 0 0 10px 470px;
+}
+
+.location p{
+	text-align: center;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65.9vh;
+}
+
+.contact .firstContact{
+	background-image: url('img/img15.jpg');
+	object-fit: cover;
+	width: 1000px;
+	height: 550px;
+	position: relative;
+}
+
+.contact .firstContact h1{
+	margin-left: 85px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 40px;
+}
+
+.contact .firstContact .form{
+	margin-left: 230px;
+	margin-top: 30px;
+}
+
+.contact .firstContact .btn{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.contact .firstContact .btn button{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 20px;
+	padding: 15px 40px;
+	background-color: transparent;
+	border-color: black;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+.contact .firstContact .btn button:hover{
+	color: white;
+	background-color: black;
+}
+
+.contact .firstContact .form .formList, .contact .firstContact .form .formListLast{
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact .firstContact .form .formList input{
+	padding: 10px;
+	background-color: transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid;
+	font-family: 'Work Sans', sans-serif;
+
+}
+
+.contact .firstContact .form .formListLast textarea{
+	padding: 10px;
+	background-color: transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid;
+	
+}
+
+.contact .firstContact .form .formList label, .contact .firstContact .form .formListLast label{
+	display: flex;
+	margin-top: 30px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 20px;
+}
+
+.contact .secondContact{
+	background-color: rgb(172, 255, 224);
+	width: 450px;
+	height: 350px;
+	margin-right: 950px;
+	position: absolute;
+	text-align: center;
+}
+
+.contact .secondContact h1{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 30px;
+	margin-top: 50px;
+}
+
+.contact .secondContact .contactInfo{
+	display: flex;
+	align-items: center;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.contact .secondContact .contactInfo i{
+	margin: 0 20px 0 20px;
+	font-size: 30px;
+}
+
+.contact .secondContact .contactInfo p{
+	margin-left: 20px;
+	font-size: 20px;
+}
