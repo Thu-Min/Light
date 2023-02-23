@@ -440,6 +440,11 @@ body{
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* .card:hover{
+	width: 370px;
+	height: 750px;
+} */
+
 .tools {
  	display: flex;
  	align-items: center;
@@ -450,6 +455,12 @@ body{
 	width: 350px;
 	height: 530px;
 	object-fit: cover;
+}
+
+.tools img:hover{
+	width: 370px;
+	height: 550px;
+	/* object-fit: cover; */
 }
 
 .card .cardContent{
