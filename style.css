@@ -440,11 +440,6 @@ body{
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* .card:hover{
-	width: 370px;
-	height: 750px;
-} */
-
 .tools {
  	display: flex;
  	align-items: center;
@@ -460,7 +455,6 @@ body{
 .tools img:hover{
 	width: 370px;
 	height: 550px;
-	/* object-fit: cover; */
 }
 
 .card .cardContent{
@@ -575,7 +569,6 @@ body{
 	font-weight: bold;
 	color: white;
 	text-shadow: 5px 5px 5px black;
-	
 }
 
 .aboutUs .bg p{
@@ -717,7 +710,6 @@ body{
 	border-right: none;
 	border-bottom: solid;
 	font-family: 'Work Sans', sans-serif;
-
 }
 
 .contact .firstContact .form .formListLast textarea{
@@ -727,7 +719,6 @@ body{
 	border-left: none;
 	border-right: none;
 	border-bottom: solid;
-	
 }
 
 .contact .firstContact .form .formList label, .contact .firstContact .form .formListLast label{
