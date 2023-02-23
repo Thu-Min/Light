@@ -40,6 +40,7 @@ body{
 .header .searchBar button{
 	padding: 10px 9px;
 	border-right: 2px;
+	border-left: 2px;
 	border-top: 2px;
 	border-bottom: 2px;
 	border-color: dimgray;
@@ -138,9 +139,12 @@ body{
   	text-shadow: 5px 5px 5px black;
 }
 
+.home a{
+	position: absolute;
+}
+
 .home button{
   	font-family: 'Work Sans', sans-serif;
- 	position: absolute;
 	margin-top: 300px;
   	background-color: transparent;
   	color: black;
@@ -429,10 +433,11 @@ body{
 .card {
  	width: 350px;
  	height: 730px;
- 	margin: 0 auto;
+ 	margin: 20px auto;
  	background-color: #ddd;
  	border-radius: 3px;
  	z-index: 1;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .tools {
@@ -508,6 +513,10 @@ body{
 	color: white;
 	padding: 8px;
 	border-radius: 30px;
+}
+
+.footer .socialMedia{
+	margin-right: 50px;
 }
 
 .footer .socialMedia .circleIcon i{
@@ -746,4 +755,242 @@ body{
 .contact .secondContact .contactInfo p{
 	margin-left: 20px;
 	font-size: 20px;
+}
+
+.feature .list{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.feature .list .categoryList{
+	display: flex;
+	margin-right: 23px;
+	margin-top: 40px;
+}
+
+.feature .list .categoryList a{
+	padding: 0 20px;
+	font-family: 'Work Sans', sans-serif;
+	text-decoration: none;
+	color: black;
+}
+
+.feature .list .categoryList a:hover{
+	background-color: black;
+	color: white;
+}
+
+.loadMore{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.loadMore button{
+	padding: 16px;
+	background-color: transparent;
+	border-radius: 15px;
+	border-color: black;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.loadMore button:hover{
+	background-color: black;
+	color: white;
+}
+
+.event{
+	height: 600px;
+	margin-left: 370px;
+	margin-top: 25px;
+}
+
+.event img{
+	width: 61.4%;
+	height: 600px;
+	object-fit: cover;
+	position: absolute;
+	opacity: 50%;
+}
+
+.event .eventText{
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 150px;
+}
+
+.event .eventText h1{
+	text-align: left;
+	color: black;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 80px;
+	margin-bottom: 0;
+}
+
+.event .eventText p{
+	font-family: 'Work Sans', sans-serif;
+	font-size: 26px;
+	margin-top: 0;
+	margin-left: 10px;
+}
+
+.event .eventText .share{
+	padding: 10px 13px;
+	font-size: 20px;
+	border-radius: 50px;
+	border-color: black;
+	background-color: transparent;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.event .eventText .share:hover{
+	background-color: black;
+	color: white;
+}
+
+.event .eventText .book{
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 40px;
+	border-color: black;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.event .eventText .book:hover{
+	background-color: black;
+	color: white;
+}
+
+.event .eventText .food{
+	margin-right: 10px;
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 40px;
+	border-color: black;
+	background-color: transparent;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.event .eventText .food:hover{
+	background-color: black;
+	color: white;
+}
+
+.eventCard{
+	position: absolute;
+	background-color: white;
+	border-radius: 10px;
+	width: 500px;
+	height: 500px;
+	margin: 50px 0 10px 550px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.eventCard .topPart{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: solid;
+	border-color: #ddd;
+}
+
+.eventCard .topPart .from p{
+	font-family: 'Work Sans', sans-serif;
+	padding-left: 2px;
+	margin: 0;
+}
+
+.eventCard .topPart .from h1{
+	padding: 0;
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 23px;
+}
+
+.eventCard .topPart .to p{
+	font-family: 'Work Sans', sans-serif;
+	padding-left: 2px;
+	margin: 0;
+}
+
+.eventCard .topPart .to h1{
+	padding: 0;
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 23px;
+}
+
+.eventCard .topPart .date p{
+	font-family: 'Work Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.eventCard .topPart .date .p1{
+	font-size: 28px;
+	margin: 0;
+	padding: 0;
+}
+
+.eventCard .topPart .date .p2{
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+}
+
+.eventCard .topPart .date .p3{
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+.eventCard .middlePart{
+	display: flex;
+	justify-content: center;
+	background-color: antiquewhite;
+	padding: 90px;
+}
+
+.eventCard .middlePart button{
+	padding: 20px 25px;
+	background-color: white;
+	border-color: black;
+	border-radius: 20px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.eventCard .middlePart button:hover{
+	background-color: black;
+	color: white;
+}
+
+.eventCard .bottomPart{
+	border-top: solid;
+	border-color: #ddd;
+	padding: 22px 0;	
+	background-color: #f1f1f1;
+	border-radius: 0 0 10px 10px;
+}
+
+.eventCard .bottomPart .location{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.eventCard .bottomPart .location i{
+	font-size: 50px;
+	margin-right: 10px;
+}
+
+.eventCard .bottomPart .location p{
+	text-align: left;
 }
